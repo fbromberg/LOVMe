@@ -31,7 +31,6 @@
     \IEEEauthorblockN{((( nb.metadata["latex_metadata"]["author"] )))}
 ((*- endif *))
 ((*- if nb.metadata["latex_metadata"]["affiliation"]: -*))
-    \par
     \IEEEauthorblockA{((( nb.metadata["latex_metadata"]["affiliation"] )))}
 ((*- endif *))
 ((*- endif *))

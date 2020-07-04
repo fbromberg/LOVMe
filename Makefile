@@ -3,7 +3,7 @@
 all: paper.pdf
 
 %.tex: %.ipynb
-	jupyter nbconvert --to latex --template ieeeB.tplx $<
+	jupyter nbconvert --to latex --template ieee.tplx $<
 
 %.pdf: %.tex
 	pdflatex $*
@@ -11,6 +11,7 @@ all: paper.pdf
 	pdflatex $*
 	pdflatex $*
 	rm -f $*.aux $*.out $*.log $*.bbl $*.blg
+
 
 paper.pdf: paper.tex references.bib
 paper.tex: paper.ipynb
